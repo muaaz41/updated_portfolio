@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-image: url("or.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+        .submit-button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #000000 !important;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+.submit-button:hover {
+  background-color: rgba(52, 89, 194, 0.9) !important;
+  color: #fff !important;
+}
+
+.submit-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .square-button {
+    width: 200px;
+            height: 100px;
+            background-color: rgba(0, 58, 82, 0.6) ;
+            border: none;
+            color: rgb(255, 250, 250);
+            font-size: 16px;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        button{
+            width: 200px;
+            height: 100px;
+            background-color: rgba(0, 58, 82, 0.6) ;
+            border: none;
+            color: rgb(255, 250, 250);
+            font-size: 16px;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .square-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .additional-info {
+            text-align: center;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .email-input {
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+        }
+
+        .email-textarea {
+            width: 300px;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+        }
+        .contact-method:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b><i><u>Contact Me</u></i></b></h1>
+        <div class="contact-info">
+            <div class="contact-method">
+                <img class="icon" src="download9.jpg" alt="Phone Icon">
+                +92 (310)-4659066
+            </div>
+            <div class="contact-method">
+                <img class="icon" src="download (3).png" alt="Email Icon">
+                munirmuaaz@gmail.com
+            </div>
+            <div class="contact-method">
+                <img class="icon" src="download (4).png" alt="Location Icon">
+                Rewaz Garden,Lahore,Pakistan
+            </div>
+        </div>
+        <div class="additional-info">
+            <p>If you have any inquiries or wish to get in touch, feel free to send me a message using the form below:</p>
+        </div>
+        <form onsubmit="submitForm(event)">
+            <label for="name"><b>Name:</b></label><br>
+            <input type="text" name="name" placeholder="Your Name" class="email-input" required><br>
+            <label for="email"><b>Email:</b></label><br>
+            <input type="email" name="email" placeholder="Your Email" class="email-input" required><br>
+            <label for="message"><b>Message:</b></label><br>
+            <textarea name="message" placeholder="Your Message" class="email-textarea" required></textarea><br>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+        <br>
+        <section>
+        <div class="container">
+            <a href="index.html" class="square-button">Back to HomeScreen</a>
+        </div>
+    </section>
+    
+</body>
+</html>
